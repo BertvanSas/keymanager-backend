@@ -1,9 +1,18 @@
-<?php
-// Automatisch redirecten naar Control Panel login pagina
-header("Location: /Control%20Panel.php");
-exit();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welkom</title>
+</head>
+<body>
+    <h1>Welkom</h1>
 
-// Powered by Site.pro
-if (function_exists('ini_set')) @ini_set('opcache.enable', '0');
-include dirname(__FILE__).'/sitepro/index.php';
-?>
+    <p>Klik hier om naar het <a href="Control%20Panel.php">Control Panel</a> te gaan.</p>
+
+    <form method="post">
+        <label for="key">Voer je sleutel in:</label>
+        <input type="text" id="key" name="key" required>
+        <button type="submit">Check</button>
+    </form>
+</body>
+</html>
