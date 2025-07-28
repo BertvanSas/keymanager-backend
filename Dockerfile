@@ -1,0 +1,1 @@
+# Gebruik een lichte PHP Apache imageFROM php:8.2-apache# Kopieer alle bestanden naar de webserver directoryCOPY . /var/www/html/# Open standaard poort 80 (hoeft niet expliciet voor Render, maar netjes)EXPOSE 80
